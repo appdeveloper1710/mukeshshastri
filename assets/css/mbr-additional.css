@@ -1616,7 +1616,7 @@ a {
   background-color: #ffffff;
 }
 .cid-uaBgjUCH7m .mbr-text {
-  color: #000000;
+  color: #fff;
 }
 .cid-uaBgjUCH7m .mbr-section-subtitle {
   color: #000000;
@@ -1624,6 +1624,15 @@ a {
 .cid-uaBgjUCH7m .mbr-section-title {
   color: #000000;
 }
+.cid-uaBgjUCH7m ul {
+  list-style-type: disclosure-closed; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.cid-uaBgjUCH7m li {
+  margin: 10px; /* Adjust the desired space between list items */
+}
+
 .cid-uaBgjUCY28 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1664,6 +1673,7 @@ a {
   padding-top: 5rem;
   padding-bottom: 3rem;
   background-color: #ffffff;
+  margin-bottom: 50px;
 }
 .cid-uaBgjUCP22 .item-subtitle {
   line-height: 1.2;
@@ -1784,7 +1794,7 @@ a {
 .cid-uaBgjUDsQN {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-image: url("../images/photo-1585103789959-156ed19b3c5b.jpeg");
+  background-image: url("../images/bg.jpg");
 }
 .cid-uaBgjUDsQN .mbr-fallback-image.disabled {
   display: none;
@@ -1823,7 +1833,7 @@ a {
 }
 .cid-uaBgjUDsQN .card-title {
   text-align: center;
-  color: #000000;
+  color: #fff;
 }
 .cid-uaBgjUDsgb {
   padding-top: 5rem;
@@ -1993,7 +2003,7 @@ a {
   background-color: #ffffff;
 }
 .cid-uaBgjUDR1J .row {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 .cid-uaBgjUDR1J .mbr-fallback-image.disabled {
   display: none;
@@ -2008,7 +2018,7 @@ a {
   top: 0;
 }
 .cid-uaBgjUDR1J .mbr-side-description {
-  text-align: left;
+  text-align: justify;
 }
 .cid-uaBgjUExBE {
   padding-top: 6rem;
@@ -2020,6 +2030,7 @@ a {
   height: 80px;
   object-fit: cover;
   border-radius: 50% !important;
+  filter: blur(3px);
 }
 .cid-uaBgjUExBE .item-wrapper {
   background: #ffffff;
@@ -2312,15 +2323,20 @@ a {
 }
 .whatsapp-button {
   position: fixed;
-  bottom: 20px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
   background-color: transparent; /* Transparent background */
   z-index: 9999; /* Ensure the button stays on top */
+  margin-left: 10px;
 }
 
 .whatsapp-button a {
   text-decoration: none; /* Remove underline from anchor tag */
   color: inherit; /* Inherit text color */
+}
+
+.whatsapp-button img {
+  max-width: 100%;
 }
 
 .top-section-div {
@@ -2338,8 +2354,9 @@ a {
   margin-bottom: 20px; /* Spacing below boxes */
   padding: 20px;
   box-sizing: border-box; /* Include padding in the width calculation */
-  background-color: #f0f0f0; /* Optional: Add background color */
+  background-color: #F3722C; /* Optional: Add background color */
 }
+
 
 @media (max-width: 768px) {
   .solutions-container {

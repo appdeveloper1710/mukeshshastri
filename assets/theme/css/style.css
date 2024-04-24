@@ -387,18 +387,26 @@ nav .mbr-section-btn {
   display: -ms-flex;
   display: -o-flex;
   align-items: center;
-  min-height: 100vh;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  position: relative; /* Ensure proper positioning of the image */
+  position: relative;
+  background-image: url('../../images/banner.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.cid-uaBgjUBzfl img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto; /* Ensure the image maintains its aspect ratio */
+@media (min-width: 768px) {
+  .header18 {
+    min-height: 100vh;
+  }
+}
+
+/* For mobile */
+@media (max-width: 767px) {
+  .header18 {
+    min-height: 50vh;
+  }
 }
 
 /*! Map */
