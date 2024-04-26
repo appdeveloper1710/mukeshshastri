@@ -2321,23 +2321,6 @@ a {
 .cid-uaBgjUFdYG .mbr-section-title {
   color: #ffffff;
 }
-.whatsapp-button {
-  position: fixed;
-  bottom: 10px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
-  background-color: transparent; /* Transparent background */
-  z-index: 9999; /* Ensure the button stays on top */
-  margin-left: 10px;
-}
-
-.whatsapp-button a {
-  text-decoration: none; /* Remove underline from anchor tag */
-  color: inherit; /* Inherit text color */
-}
-
-.whatsapp-button img {
-  max-width: 100%;
-}
 
 .top-section-div {
   width: 100%;
@@ -2369,3 +2352,78 @@ a {
 }
 
 
+.fixed-buttons {
+  position: fixed;
+  bottom: 10px; /* Adjust this value to change the distance from the bottom */
+  right: 10px; /* Adjust this value to change the distance from the right */
+  z-index: 999; /* Ensure buttons are above other content */
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  align-items: flex-end; /* Align buttons to the right */
+}
+
+.call-button,
+.whatsapp-button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #2ecc71; /* Green color for WhatsApp button */
+  color: #fff;
+  border: 2px solid #2ecc71; /* Green border for WhatsApp button */
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 10px; /* Add margin between buttons */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.call-button {
+  background-color: #3498db; /* Blue color for Call button */
+  border-color: #3498db; /* Blue border for Call button */
+}
+
+/* Hover effect */
+.call-button:hover,
+.whatsapp-button:hover {
+  background-color: #2980b9; /* Darker blue on hover for Call button */
+  border-color: #2980b9; /* Darker blue border on hover for Call button */
+  color: #fff;
+}
+
+/* Animation for buttons */
+.call-button,
+.whatsapp-button {
+  animation: fadeInUp 1s ease;
+}
+
+/* Keyframe animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Icon styles */
+.fas,
+.fab {
+  margin-right: 10px;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+  .call-button,
+  .whatsapp-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-bottom: 10px; /* Add margin between buttons on small screens */
+  }
+}
